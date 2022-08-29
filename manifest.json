@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Above and Eclipsed",
-  "version": "1.5",
+  "version": "1.6",
   "author": "",
   "files": [
     {
@@ -230,6 +230,11 @@
       "required": true
     },
     {
+      "projectID": 494206,
+      "fileID": 3571038,
+      "required": true
+    },
+    {
       "projectID": 282001,
       "fileID": 3770722,
       "required": true
@@ -262,6 +267,11 @@
     {
       "projectID": 291493,
       "fileID": 3524478,
+      "required": true
+    },
+    {
+      "projectID": 509285,
+      "fileID": 3503936,
       "required": true
     },
     {
