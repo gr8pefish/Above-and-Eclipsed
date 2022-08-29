@@ -33,7 +33,7 @@ graphicsMode:1
 ao:2
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:[]
+resourcePacks:["vanilla","openloader/resources/create_style_modded_compats","mod_resources","openloader/resources/simis_edits"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -118,20 +118,26 @@ key_key.slide.desc:key.keyboard.left.shift
 key_placebo.toggleWings:key.keyboard.keypad.8
 key_placebo.toggleTrails:key.keyboard.keypad.9
 key_Piston Pushcart Up:key.keyboard.space
-key_Piston Pushcart Down:key.keyboard.left.control
 key_Start composing:key.keyboard.g
 key_Tool Menu (Hold):key.keyboard.left.alt
+key_Piston Pushcart Down:key.keyboard.left.control
 key_key.corpse.death_history:key.keyboard.u
 key_Open the Crash Utilities Screen:key.keyboard.u:CONTROL
 key_Copy Container Class:key.keyboard.unknown
 key_Show Slot Index Tooltips:key.keyboard.unknown
-key_Options Gui:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.g
+key_Options Gui:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.unknown
 key_key.control:key.keyboard.left.control
-key_key.inventorysorter.sort:key.mouse.middle
+key_key.effortlessbuilding.hud.desc:key.keyboard.keypad.add
+key_key.effortlessbuilding.replace.desc:key.keyboard.keypad.subtract
+key_key.effortlessbuilding.mode.desc:key.keyboard.left.alt
+key_key.effortlessbuilding.undo.desc:key.keyboard.z:CONTROL
+key_key.effortlessbuilding.redo.desc:key.keyboard.y:CONTROL
+key_key.effortlessbuilding.altplacement.desc:key.keyboard.left.control
 key_key.inventorysorter.itemin:key.mouse.100
 key_key.inventorysorter.itemout:key.mouse.102
+key_key.inventorysorter.sort:key.mouse.middle
 key_key.toggle_focus.desc:key.keyboard.tab
 key_key.cofh.mode_change_increment:key.keyboard.v
 key_key.cofh.mode_change_decrement:key.keyboard.b

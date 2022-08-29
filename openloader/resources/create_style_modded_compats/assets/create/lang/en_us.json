@@ -1,0 +1,26 @@
+{
+	"block.create.polished_dolomite": "Cut Dolomite",
+	"block.create.polished_dolomite_slab": "Cut Dolomite Slab",
+	"block.create.polished_dolomite_stairs": "Cut Dolomite Stairs",
+	"block.create.polished_dolomite_wall": "Cut Dolomite Wall",
+	"block.create.polished_gabbro": "Cut Gabbro",
+	"block.create.polished_gabbro_slab": "Cut Gabbro Slab",
+	"block.create.polished_gabbro_stairs": "Cut Gabbro Stairs",
+	"block.create.polished_gabbro_wall": "Cut Gabbro Wall",
+	"block.create.polished_limestone": "Cut Limestone",
+	"block.create.polished_limestone_slab": "Cut Limestone Slab",
+	"block.create.polished_limestone_stairs": "Cut Limestone Stairs",
+	"block.create.polished_limestone_wall": "Cut Limestone Wall",
+	"block.create.polished_weathered_limestone": "Cut Weathered Limestone",
+	"block.create.polished_weathered_limestone_slab": "Cut Weathered Limestone Slab",
+	"block.create.polished_weathered_limestone_stairs": "Cut Weathered Limestone Stairs",
+	"block.create.polished_weathered_limestone_wall": "Cut Weathered Limestone Wall",
+	
+	"block.create.diorite_pillar": "Diorite Fancy Pillar",
+	"block.create.dolomite_pillar": "Dolomite Fancy Pillar",
+	"block.create.andesite_pillar": "Andesite Fancy Pillar",
+	"block.create.weathered_limestone_pillar": "Weathered Limestone Fancy Pillar",
+	"block.create.granite_pillar": "Granite Fancy Pillar",
+	"block.create.gabbro_pillar": "Gabbro Fancy Pillar",
+	"block.create.limestone_pillar": "Limestone Fancy Pillar"
+}
