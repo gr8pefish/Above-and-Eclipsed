@@ -28,3 +28,4 @@ usernamecache.json
 .curseclient
 minecraftinstance.json
 pregen/
+config/spark/activity.json
