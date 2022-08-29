@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Above and Eclipsed",
-  "version": "1.9",
+  "version": "1.1",
   "author": "",
   "files": [
     {
@@ -45,6 +45,11 @@
       "required": true
     },
     {
+      "projectID": 574856,
+      "fileID": 3949659,
+      "required": true
+    },
+    {
       "projectID": 530858,
       "fileID": 3480574,
       "required": true
@@ -62,6 +67,11 @@
     {
       "projectID": 421694,
       "fileID": 3573381,
+      "required": true
+    },
+    {
+      "projectID": 628345,
+      "fileID": 3809513,
       "required": true
     },
     {
@@ -112,6 +122,11 @@
     {
       "projectID": 389989,
       "fileID": 3091598,
+      "required": true
+    },
+    {
+      "projectID": 551520,
+      "fileID": 3766033,
       "required": true
     },
     {
@@ -177,6 +192,11 @@
     {
       "projectID": 276951,
       "fileID": 3681503,
+      "required": true
+    },
+    {
+      "projectID": 280294,
+      "fileID": 3510435,
       "required": true
     },
     {
@@ -270,6 +290,11 @@
       "required": true
     },
     {
+      "projectID": 460819,
+      "fileID": 3249059,
+      "required": true
+    },
+    {
       "projectID": 291493,
       "fileID": 3524478,
       "required": true
@@ -357,6 +382,11 @@
     {
       "projectID": 317716,
       "fileID": 3522097,
+      "required": true
+    },
+    {
+      "projectID": 558905,
+      "fileID": 3955105,
       "required": true
     },
     {
@@ -475,6 +505,11 @@
       "required": true
     },
     {
+      "projectID": 596879,
+      "fileID": 3707460,
+      "required": true
+    },
+    {
       "projectID": 228702,
       "fileID": 3793852,
       "required": true
@@ -547,6 +582,11 @@
     {
       "projectID": 432072,
       "fileID": 3152473,
+      "required": true
+    },
+    {
+      "projectID": 448233,
+      "fileID": 3760389,
       "required": true
     },
     {
@@ -727,6 +767,11 @@
     {
       "projectID": 324717,
       "fileID": 3597364,
+      "required": true
+    },
+    {
+      "projectID": 581495,
+      "fileID": 3949695,
       "required": true
     },
     {
