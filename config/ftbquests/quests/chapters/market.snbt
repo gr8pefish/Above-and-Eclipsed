@@ -775,12 +775,6 @@
 			]
 			rewards: [
 				{
-					id: "500098FD4762A38F"
-					type: "item"
-					auto: "enabled"
-					item: "exoticbirds:duck_spawn_egg"
-				}
-				{
 					id: "79C8307ED8450347"
 					type: "custom"
 					title: "Repeatable"

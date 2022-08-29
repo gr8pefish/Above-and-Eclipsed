@@ -153,7 +153,6 @@ onEvent('item.tags', event => {
 
 	event.get("farmersdelight:offhand_equipment").add("forbidden_arcanus:obsidian_skull_shield")
 
-	event.get("forge:raw_chicken").add("exoticbirds:raw_birdmeat")
 	event.get("forge:tools/axes").add(TC("hand_axe"))
 	event.get("forge:vines").add(MC("vine")).add(BOP("willow_vine")).add(BOP("spanish_moss"))
 	event.get("forge:recycling")
