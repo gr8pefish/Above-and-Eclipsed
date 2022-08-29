@@ -6,13 +6,29 @@
 	ropePulleyFix = true
 	#Fixes bulk blasting setups destroying items when a single input stack yields more than one stack of items.
 	bulkBlastingFix = true
+	#When set to true, prevents items on belts, depots and other containers from rendering past a certain distance. This may help with performance when building large factories.
+	enableItemCulling = false
 	#Fixes minecart contraptions spawning at a slight offset when assembled.
 	minecartContraptionOffsetFix = true
 
+	[Create.Culling]
+		beltCullDistance = 24
+		depotCullDistance = 24
+		basinCullDistance = 24
+		ejectorCullDistance = 24
+
+[FTBQuests]
+	#When set to true, quests with auto-claimed team rewards will grant the rewards to the player who completed the quest rather than the first online player in the team.
+	autoCompleteRewardTweak = true
+
 [General]
+	#When set to true, allows items in lazy chunks to despawn. This prevents items from endlessly accumulating in a lazy chunk and eventually crashing the game if only part of a factory is chunk loaded.
+	enableLazyChunkItemDespawning = true
 	#Forces registries to reload after loading an existing world on a dedicated server. Mainly fixes biome shuffling when adding or updating biome mods.
 	#This has no effect on singleplayer or LAN worlds as Forge already fixes biome IDs on those.
 	dedicatedServerRegistryFix = true
+	#When set to true, prevents sounds that are too far away to be heard from playing at all. This can help with performance when building factories with a lot of Create machines.
+	enableSoundCulling = false
 
 [Chisel]
 	#Restores JEI integration for Chisel.
@@ -47,6 +63,8 @@
 	crystalSizeFix = true
 	#Remove the random velocity applied to quantum-entangled singularities from AE2 when created by exploding singularities.
 	removeQESingularityVelocity = true
+	#Fixes Tiny TNT causing a crash when destroying a multipart block (such as cables from Project Red).
+	tinyTNTFix = true
 
 [Thermal]
 	#Fixes dynamos from Thermal becoming waterlogged when loading a world previously played with a version of Thermal Foundation older than 1.5.0.14.
