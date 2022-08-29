@@ -22,12 +22,12 @@ mouseSensitivity:0.5
 fov:0.0
 screenEffectScale:1.0
 fovEffectScale:1.0
-gamma:0.0
-renderDistance:12
+gamma:0.5
+renderDistance:10
 entityDistanceScaling:1.0
 guiScale:0
 particles:0
-maxFps:160
+maxFps:260
 difficulty:2
 graphicsMode:1
 ao:2
@@ -53,7 +53,7 @@ chatDelay: 0.0
 chatHeightUnfocused:0.44366195797920227
 chatScale:1.0
 chatWidth:1.0
-mipmapLevels:4
+mipmapLevels:0
 useNativeTransport:true
 mainHand:right
 attackIndicator:1
@@ -134,6 +134,7 @@ key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.curios.open.desc:key.keyboard.g
 key_Options Gui:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.unknown
+key_key.observable.profile:key.keyboard.r
 key_key.control:key.keyboard.left.control
 key_key.effortlessbuilding.hud.desc:key.keyboard.keypad.add
 key_key.effortlessbuilding.replace.desc:key.keyboard.keypad.subtract
@@ -141,9 +142,9 @@ key_key.effortlessbuilding.mode.desc:key.keyboard.left.alt
 key_key.effortlessbuilding.undo.desc:key.keyboard.z:CONTROL
 key_key.effortlessbuilding.redo.desc:key.keyboard.y:CONTROL
 key_key.effortlessbuilding.altplacement.desc:key.keyboard.left.control
+key_key.inventorysorter.itemout:key.mouse.102
 key_key.inventorysorter.itemin:key.mouse.100
 key_key.inventorysorter.sort:key.mouse.middle
-key_key.inventorysorter.itemout:key.mouse.102
 key_key.toggle_focus.desc:key.keyboard.tab
 key_key.cofh.mode_change_increment:key.keyboard.v
 key_key.cofh.mode_change_decrement:key.keyboard.b
@@ -152,6 +153,8 @@ key_key.endergetic.booflo_slam:key.keyboard.x
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
+key_key.tconstruct.helmet_interact:key.keyboard.z
+key_key.tconstruct.leggings_interact:key.keyboard.i
 key_key.exchangers.open_gui:key.keyboard.comma
 key_key.exchangers.range_switch:key.keyboard.unknown
 key_key.exchangers.mode_switch:key.keyboard.unknown
@@ -159,8 +162,6 @@ key_key.exchangers.force_drop_items_mode_toggle:key.keyboard.unknown
 key_key.exchangers.directional_placement_mode_toggle:key.keyboard.unknown
 key_key.exchangers.fuzzy_placement_mode_toggle:key.keyboard.unknown
 key_key.exchangers.void_items_mode_toggle:key.keyboard.unknown
-key_key.tconstruct.helmet_interact:key.keyboard.z
-key_key.tconstruct.leggings_interact:key.keyboard.i
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_mod.chiselsandbits.keys.key.modded-tool.open:key.keyboard.r
 key_mod.chiselsandbits.keys.key.modded-tool.cycle.left:key.keyboard.unknown
