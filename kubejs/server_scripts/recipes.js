@@ -32,6 +32,7 @@ let AC = (id, x) => MOD("aquaculture", id, x)
 let PP = (id, x) => MOD("prettypipes", id, x)
 let OC = (id, x) => MOD("occultism", id, x)
 let FA = (id, x) => MOD("forbidden_arcanus", id, x)
+let QU = (id, x) => MOD("quark", id, x)
 //
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -441,6 +442,7 @@ function unwantedRecipes(event) {
 	event.remove({ id: TE('storage/electrum_nugget_from_ingot') })
 	event.remove({ id: TE('machine/pulverizer/pulverizer_electrum_ingot_to_dust') })
 	event.remove({ id: TE('parts/electrum_gear') })
+	event.remove({ id: QU('building/crafting/compressed/potato_crate') })
 	
 	//event.remove({ id: AP('smelting/charcoal_block_from_logs_that_burn_smoking') })
 	event.remove({ type: 'minecraft:smoking', input: '#minecraft:logs_that_burn' })
