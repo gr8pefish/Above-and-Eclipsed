@@ -3,20 +3,23 @@
     "displayTooltip": true,
     "shiftForDetails": false,
     "displayMode": "TOGGLE",
-    "hideFromPlayerList": true,
     "hideFromDebug": true,
-    "showItem": true,
+    "iconMode": "TOP",
     "enableTextToSpeech": false,
     "maxHealthForRender": 40,
     "maxHeartsPerLine": 10,
-    "displayFluids": false
+    "fluldMode": "NONE",
+    "reachDistance": 0.0
   },
   "overlay": {
     "overlayPosX": 0.5,
-    "overlayPosY": 0.99,
-    "overlayScale": 1.0,
+    "overlayPosY": 1.0,
+    "overlayAnchorX": 0.5,
+    "overlayAnchorY": 0.0,
+    "overlaySquare": false,
+    "flipMainHand": false,
     "color": {
-      "alpha": 80,
+      "alpha": 75,
       "themes": [
         {
           "id": "waila:dark",
@@ -33,12 +36,12 @@
           "fontColor": 10526880
         }
       ],
-      "activeTheme": "waila:vanilla"
+      "activeTheme": "waila:dark"
     }
   },
   "formatting": {
-    "modName": "\\u00A79\\u00A7o%s",
-    "blockName": "\\u00A7f%s",
+    "modName": "\\u00A78\\u00A7o%s",
+    "blockName": "\\u00A77%s",
     "fluidName": "\\u00A7f%s",
     "entityName": "\\u00A7f%s",
     "registryName": "\\u00A77[%s]"
