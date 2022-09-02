@@ -21,7 +21,7 @@
 	#Defines how many Players have to be online for the Processor to Auto Pause, -1 = Disabled. It is Inclusive 2 = Allows 1 Player
 	#Range: > -1
 	"Player Limit" = -1
-	info = true
+	info = false
 
 [client]
 
@@ -30,11 +30,11 @@
 		#Allowed Values: START, CENTER, END
 		horizontal-alignment = "START"
 		#Defines if the Pregen Overlay should be enabled
-		pregen-overlay = true
+		pregen-overlay = false
 		#Defines the Vertical Alignment of the UI, top to bottom
 		#Allowed Values: START, CENTER, END
 		vertical-alignment = "START"
 		#Defines the Scale of the Overlay
 		#Range: 0.1 ~ 10.0
-		scale = 1.0
+		scale = 0.1
 
