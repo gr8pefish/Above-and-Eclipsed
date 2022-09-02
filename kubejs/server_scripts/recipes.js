@@ -651,6 +651,12 @@ function tweaks(event) {
 		A: MC('stick')
 	})
 
+	//add logs --> sticks directly
+	event.shaped('8x minecraft:stick', [
+		'#minecraft:logs', 
+		'#minecraft:logs'
+	])
+
 	event.replaceInput({ id: "computercraft:cable" }, MC('redstone'), PR_C('red_ingot'))
 	event.replaceInput({ id: "computercraft:wired_modem" }, MC('redstone'), PR_C('red_ingot'))
 	event.replaceInput({ id: CR('crafting/kinetics/rope_pulley') }, '#forge:wool', '#supplementaries:ropes')
