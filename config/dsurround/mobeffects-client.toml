@@ -36,7 +36,7 @@
 	"Show Arrow Particle Trail" = false
 	#Toolbar master volume scale
 	#Range: 0 ~ 100
-	"Toolbar Volume Scale" = 35
+	"Toolbar Volume Scale" = 10
 	#Show breath effect in cold regions and underwater
 	"Show Breath Effect" = true
 	#Enable toolbar item sound effects

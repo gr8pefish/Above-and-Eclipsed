@@ -88,7 +88,7 @@ key_key.smoothCamera:key.keyboard.unknown
 key_key.fullscreen:key.keyboard.f11
 key_key.spectatorOutlines:key.keyboard.unknown
 key_key.swapOffhand:key.keyboard.f
-key_key.saveToolbarActivator:key.keyboard.c
+key_key.saveToolbarActivator:key.keyboard.b
 key_key.loadToolbarActivator:key.keyboard.x
 key_key.advancements:key.keyboard.l
 key_key.hotbar.1:key.keyboard.1
@@ -117,8 +117,8 @@ key_key.enderlaunch.desc:key.mouse.left
 key_key.rocket.desc:key.mouse.left
 key_key.slide.desc:key.keyboard.left.shift
 key_placebo.toggleWings:key.keyboard.keypad.8
-key_Start composing:key.keyboard.g
 key_placebo.toggleTrails:key.keyboard.keypad.9
+key_Start composing:key.keyboard.g
 key_Tool Menu (Hold):key.keyboard.left.alt
 key_Piston Pushcart Up:key.keyboard.space
 key_Piston Pushcart Down:key.keyboard.left.control
@@ -128,12 +128,12 @@ key_key.corpse.death_history:key.keyboard.u
 key_Open the Crash Utilities Screen:key.keyboard.u:CONTROL
 key_Copy Container Class:key.keyboard.unknown
 key_Show Slot Index Tooltips:key.keyboard.unknown
+key_key.curios.open.desc:key.keyboard.g
 key_iris.keybind.reload:key.keyboard.r
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
-key_key.curios.open.desc:key.keyboard.g
 key_Options Gui:key.keyboard.unknown
-key_key.ftbquests.quests:key.keyboard.unknown
+key_key.ftbquests.quests:key.keyboard.grave.accent
 key_key.observable.profile:key.keyboard.r
 key_key.control:key.keyboard.left.control
 key_key.effortlessbuilding.hud.desc:key.keyboard.keypad.add
@@ -149,14 +149,12 @@ key_key.toggle_focus.desc:key.keyboard.tab
 key_sndctrl.text.quickvolumemenu.open:key.keyboard.v:CONTROL
 key_sndctrl.text.soundconfig.open:key.keyboard.i:CONTROL
 key_key.cofh.mode_change_increment:key.keyboard.v
-key_key.cofh.mode_change_decrement:key.keyboard.b
+key_key.cofh.mode_change_decrement:key.keyboard.unknown
 key_key.endergetic.booflo_vest:key.keyboard.space
 key_key.endergetic.booflo_slam:key.keyboard.x
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
-key_key.tconstruct.helmet_interact:key.keyboard.z
-key_key.tconstruct.leggings_interact:key.keyboard.i
 key_key.exchangers.open_gui:key.keyboard.comma
 key_key.exchangers.range_switch:key.keyboard.unknown
 key_key.exchangers.mode_switch:key.keyboard.unknown
@@ -164,6 +162,15 @@ key_key.exchangers.force_drop_items_mode_toggle:key.keyboard.unknown
 key_key.exchangers.directional_placement_mode_toggle:key.keyboard.unknown
 key_key.exchangers.fuzzy_placement_mode_toggle:key.keyboard.unknown
 key_key.exchangers.void_items_mode_toggle:key.keyboard.unknown
+key_key.tconstruct.helmet_interact:key.keyboard.z
+key_key.tconstruct.leggings_interact:key.keyboard.i
+key_quark.keybind.sort_player:key.keyboard.unknown
+key_quark.keybind.sort_container:key.keyboard.unknown
+key_quark.keybind.camera_mode:key.keyboard.f12
+key_quark.keybind.transfer_insert:key.keyboard.unknown
+key_quark.keybind.transfer_extract:key.keyboard.unknown
+key_quark.keybind.shift_lock:key.keyboard.unknown
+key_quark.keybind.lock_rotation:key.keyboard.k
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -182,28 +189,21 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
-key_quark.keybind.transfer_insert:key.keyboard.unknown
-key_quark.keybind.transfer_extract:key.keyboard.unknown
-key_quark.keybind.shift_lock:key.keyboard.unknown
+key_quark.keybind.back:key.mouse.4
 key_quark.keybind.autorun:key.keyboard.caps.lock
-key_quark.keybind.lock_rotation:key.keyboard.k
-key_quark.keybind.camera_mode:key.keyboard.f12
 key_quark.keybind.change_hotbar:key.keyboard.z
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
-key_quark.keybind.back:key.mouse.4
-key_quark.keybind.sort_player:key.keyboard.unknown
-key_quark.keybind.sort_container:key.keyboard.unknown
 key_mod.chiselsandbits.keys.key.modded-tool.open:key.keyboard.r
+key_create.keyinfo.toolmenu:key.keyboard.left.alt
+key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_mod.chiselsandbits.keys.key.modded-tool.cycle.left:key.keyboard.unknown
 key_mod.chiselsandbits.keys.key.modded-tool.cycle.right:key.keyboard.unknown
 key_mod.chiselsandbits.keys.key.measuring-tape.reset:key.mouse.right:SHIFT
 key_mod.chiselsandbits.keys.key.undo:key.keyboard.z:CONTROL
 key_mod.chiselsandbits.keys.key.redo:key.keyboard.y:CONTROL
-key_create.keyinfo.toolmenu:key.keyboard.left.alt
-key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_keybind.xreliquary.fortune_coin:key.keyboard.unknown
-key_key.improvedbackpacks.open_backpack:key.keyboard.b
-key_key.zoom:key.keyboard.c
+key_key.improvedbackpacks.open_backpack:key.keyboard.c
+key_key.zoom:key.keyboard.b
 key_key.craftingtweaks.rotate:key.keyboard.unknown
 key_key.craftingtweaks.rotate_counter_clockwise:key.keyboard.unknown
 key_key.craftingtweaks.balance:key.keyboard.unknown
@@ -219,7 +219,7 @@ key_key.craftingtweaks.decompressStack:key.keyboard.unknown
 key_key.craftingtweaks.decompressAll:key.keyboard.unknown
 key_key.craftingtweaks.refill_last:key.keyboard.tab
 key_key.craftingtweaks.refill_last_stack:key.keyboard.tab
-key_key.occultism.backpack:key.keyboard.b
+key_key.occultism.backpack:key.keyboard.x
 key_key.occultism.storage_remote:key.keyboard.n
 key_key.occultism.familiar.greedy_familiar:key.keyboard.unknown
 key_key.occultism.familiar.otherworld_bird:key.keyboard.unknown
@@ -240,7 +240,7 @@ key_key.occultism.familiar.mummy_familiar:key.keyboard.unknown
 key_key.occultism.familiar.beaver_familiar:key.keyboard.unknown
 key_key.configured.open_mod_list:key.keyboard.unknown
 key_key.togglejetpack:key.keyboard.x
-key_key.openrocketui:key.keyboard.c
+key_key.openrocketui:key.keyboard.b
 key_key.togglercs:key.keyboard.r
 key_key.turnrocketright:key.keyboard.d
 key_key.turnrocketleft:key.keyboard.a
@@ -261,7 +261,7 @@ key_key.jei.bookmark:key.keyboard.a
 key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown
 key_key.waila.show_recipes:key.keyboard.keypad.3
 key_key.waila.show_uses:key.keyboard.keypad.4
-soundCategory_master:1.0
+soundCategory_master:0.507947
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
