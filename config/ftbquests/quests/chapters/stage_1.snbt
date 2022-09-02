@@ -542,6 +542,8 @@
 				""
 				"These Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing."
 				""
+				"We've also included a few andesite machines to help jumpstart your factory."
+				""
 				"Happy engineering!"
 			]
 			dependencies: ["5A8DF2D8553904BF"]
@@ -552,11 +554,19 @@
 				id: "1B5F1E9F5EE6EB2C"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "49A9C8798141C302"
-				type: "item"
-				item: "create:builders_tea"
-			}]
+			rewards: [
+				{
+					id: "49A9C8798141C302"
+					type: "item"
+					item: "create:builders_tea"
+				}
+				{
+					id: "4925B384024C37F8"
+					type: "item"
+					item: "kubejs:andesite_machine"
+					count: 2
+				}
+			]
 		}
 		{
 			title: "Chapter 1 Complete!"
