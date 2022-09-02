@@ -33,7 +33,7 @@
 	Mobs = false
 	Tools = true
 	Management = true
-	World = true
+	World = false
 	Client = true
 
 [automation]
@@ -1944,7 +1944,7 @@
 			G = [0.0, 1.11, 0.0]
 
 [oddities]
-	"Totem Of Holding" = true
+	"Totem Of Holding" = false
 	Backpack = false
 	Crate = true
 	"Matrix Enchanting" = true
