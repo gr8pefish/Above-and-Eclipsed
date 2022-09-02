@@ -32,6 +32,7 @@ let AC = (id, x) => MOD("aquaculture", id, x)
 let PP = (id, x) => MOD("prettypipes", id, x)
 let OC = (id, x) => MOD("occultism", id, x)
 let FA = (id, x) => MOD("forbidden_arcanus", id, x)
+let IB = (id, x) => MOD("improved_backpacks", id, x)
 let QU = (id, x) => MOD("quark", id, x)
 //
 
@@ -640,6 +641,17 @@ function tweaks(event) {
 	event.remove({ id: "architects_palette:withered_bone" })
 
 	event.remove({ id: "extcaves:pebble_stone" })
+
+	// Change backpack threading to only take 1 string instead of 2
+	event.remove({ id: "improvedbackpacks:sewing_spool" })
+	event.shaped("improvedbackpacks:sewing_spool", [
+		'#forge:string',
+		'#forge:rods/wooden'
+	]
+	)
+
+	// Add wheat seeds to flax seeds (for string)
+	event.shapeless("supplementaries:flax_seeds", ['minecraft:wheat_seeds'])
 
 	event.remove({ id: "forbidden_arcanus:edelwood_stick" })
 	event.shaped("3x forbidden_arcanus:edelwood_stick", [

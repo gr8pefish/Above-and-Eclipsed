@@ -41,6 +41,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:constantan"
@@ -130,6 +131,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:constantan"
@@ -209,6 +211,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:constantan"
@@ -336,6 +339,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:electrum"
 						"tconstruct:constantan"
@@ -415,6 +419,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:tinkers_bronze"
 						"tconstruct:constantan"
@@ -1053,6 +1058,12 @@
 					item: "farmersdelight:cabbage"
 					count: 3L
 				}
+				{
+					id: "73D7703DC3743B9F"
+					type: "item"
+					item: "supplementaries:flax"
+					count: 3L
+				}
 			]
 			rewards: [{
 				id: "001C0326E6B6F1FF"
@@ -1081,12 +1092,6 @@
 					id: "5AE85D27C59EDB92"
 					type: "item"
 					item: "minecraft:beetroot"
-					count: 3L
-				}
-				{
-					id: "46748564E10CA41F"
-					type: "item"
-					item: "supplementaries:flax"
 					count: 3L
 				}
 				{

@@ -357,3 +357,21 @@ onEvent('block.loot_tables', event => {
     event.addJson("forbidden_arcanus:mysterywood_leaves", mystery_leaves_but_no_gapples)
 
 })
+
+onEvent('entity.loot_tables', event => {
+    
+    // Modify cow loot table to give an 60% chance to drop 1 leather more
+    event.modifyEntity('minecraft:cow', table => {
+        table.addPool(pool => {
+            pool.addItem('minecraft:leather', 1).randomChance(0.6)
+        })
+    })
+
+    // Modify horse loot table to give an 80% chance to drop 2 leather more
+    event.modifyEntity('minecraft:horse', table => {
+        table.addPool(pool => {
+            pool.addItem('minecraft:leather', 2).randomChance(0.8)
+        })
+    })
+
+})
