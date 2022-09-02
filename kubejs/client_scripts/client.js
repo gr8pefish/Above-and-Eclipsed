@@ -5,6 +5,8 @@ onEvent('jei.hide.items', event => {
 	event.hide(`#buddycards:cards`)
 	event.hide(`#buddycards:gummy_cards`)
 	event.hide('quark:backpack')
+	event.hide('#quark:shards')
+	event.hide('quark:pipe')
 })
 
 onEvent('jei.subtypes', event => {
