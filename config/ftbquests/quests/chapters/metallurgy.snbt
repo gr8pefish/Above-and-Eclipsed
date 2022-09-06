@@ -45,7 +45,7 @@
 			}]
 		}
 		{
-			title: "I: Crushed"
+			title: "I: Raw"
 			icon: "create:crushed_gold_ore"
 			x: -9.0d
 			y: -2.0d

@@ -33,7 +33,7 @@ graphicsMode:1
 ao:2
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:["vanilla","mod_resources","openloader/resources/create_style_modded_compats","openloader/resources/simis_edits","quark:emote_resources","openloader/resources/gr8pe_edits"]
+resourcePacks:["vanilla","mod_resources","openloader/resources/create_style_modded_compats","openloader/resources/simis_edits","openloader/resources/gr8pe_edits","quark:emote_resources"]
 incompatibleResourcePacks:["quark:emote_resources"]
 lastServer:
 lang:en_us
@@ -124,9 +124,9 @@ key_key.rocket.desc:key.mouse.left
 key_key.slide.desc:key.keyboard.left.shift
 key_placebo.toggleWings:key.keyboard.keypad.8
 key_placebo.toggleTrails:key.keyboard.keypad.9
+key_Piston Pushcart Up:key.keyboard.space
 key_Start composing:key.keyboard.g
 key_Tool Menu (Hold):key.keyboard.left.alt
-key_Piston Pushcart Up:key.keyboard.space
 key_Piston Pushcart Down:key.keyboard.left.control
 key_fpsreducer.key.openGui:key.keyboard.end
 key_fpsreducer.key.forceIdle:key.keyboard.pause
@@ -148,9 +148,9 @@ key_key.effortlessbuilding.mode.desc:key.keyboard.left.alt
 key_key.effortlessbuilding.undo.desc:key.keyboard.z:CONTROL
 key_key.effortlessbuilding.redo.desc:key.keyboard.y:CONTROL
 key_key.effortlessbuilding.altplacement.desc:key.keyboard.left.control
+key_key.inventorysorter.sort:key.mouse.middle
 key_key.inventorysorter.itemin:key.mouse.100
 key_key.inventorysorter.itemout:key.mouse.102
-key_key.inventorysorter.sort:key.mouse.middle
 key_key.toggle_focus.desc:key.keyboard.tab
 key_key.cofh.mode_change_increment:key.keyboard.v
 key_key.cofh.mode_change_decrement:key.keyboard.unknown
@@ -170,11 +170,18 @@ key_key.tconstruct.helmet_interact:key.keyboard.z
 key_key.tconstruct.leggings_interact:key.keyboard.i
 key_quark.keybind.sort_player:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
-key_quark.keybind.camera_mode:key.keyboard.f12
-key_quark.keybind.back:key.mouse.4
-key_quark.keybind.change_hotbar:key.keyboard.z
-key_quark.keybind.autorun:key.keyboard.caps.lock
 key_quark.keybind.lock_rotation:key.keyboard.k
+key_quark.keybind.camera_mode:key.keyboard.f12
+key_cos.key.opencosarmorinventory:key.keyboard.unknown
+key_quark.keybind.transfer_insert:key.keyboard.unknown
+key_quark.keybind.transfer_extract:key.keyboard.unknown
+key_quark.keybind.shift_lock:key.keyboard.unknown
+key_quark.keybind.change_hotbar:key.keyboard.z
+key_mod.chiselsandbits.keys.key.modded-tool.open:key.keyboard.r
+key_quark.keybind.autorun:key.keyboard.caps.lock
+key_quark.keybind.back:key.mouse.4
+key_mod.chiselsandbits.keys.key.modded-tool.cycle.left:key.keyboard.unknown
+key_mod.chiselsandbits.keys.key.modded-tool.cycle.right:key.keyboard.unknown
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -193,13 +200,6 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
-key_quark.keybind.transfer_insert:key.keyboard.unknown
-key_quark.keybind.transfer_extract:key.keyboard.unknown
-key_quark.keybind.shift_lock:key.keyboard.unknown
-key_cos.key.opencosarmorinventory:key.keyboard.unknown
-key_mod.chiselsandbits.keys.key.modded-tool.open:key.keyboard.r
-key_mod.chiselsandbits.keys.key.modded-tool.cycle.left:key.keyboard.unknown
-key_mod.chiselsandbits.keys.key.modded-tool.cycle.right:key.keyboard.unknown
 key_mod.chiselsandbits.keys.key.measuring-tape.reset:key.mouse.right:SHIFT
 key_mod.chiselsandbits.keys.key.undo:key.keyboard.z:CONTROL
 key_mod.chiselsandbits.keys.key.redo:key.keyboard.y:CONTROL
