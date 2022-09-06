@@ -33,7 +33,7 @@ graphicsMode:1
 ao:2
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:["vanilla","mod_resources","openloader/resources/create_style_modded_compats","openloader/resources/simis_edits","quark:emote_resources"]
+resourcePacks:["vanilla","mod_resources","openloader/resources/create_style_modded_compats","openloader/resources/simis_edits","quark:emote_resources","openloader/resources/gr8pe_edits"]
 incompatibleResourcePacks:["quark:emote_resources"]
 lastServer:
 lang:en_us
