@@ -7,8 +7,9 @@
 
 // Sediment filter
 <add><strainer>strainer_survivalist</strainer> <chance>20</chance> <item>minecraft:sand</item></add>
-<add><strainer>strainer_survivalist</strainer> <chance>15</chance> <item>biomesoplenty:white_sand</item></add>
-<add><strainer>strainer_survivalist</strainer> <chance>15</chance> <item>biomesoplenty:orange_sand</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>10</chance> <item>biomesoplenty:white_sand</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>10</chance> <item>biomesoplenty:orange_sand</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>10</chance> <item>biomesoplenty:black_sand</item></add>
 <add><strainer>strainer_survivalist</strainer> <chance>5</chance> <item>minecraft:clay_ball</item></add>
 
 // Unused
