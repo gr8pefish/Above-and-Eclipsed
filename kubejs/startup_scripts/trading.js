@@ -19,6 +19,7 @@ let SD = (id, x) => MOD("storagedrawers", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
+let QK = (id, x) => MOD("quark", id, x)
 //
 
 
@@ -67,7 +68,7 @@ onEvent('item.registry', event => {
 		{ in: FD('rice_bag'), out: S(1) },
 		{ in: FD('canvas', 32), out: S(1) },
 		{ in: TE('apple_block'), out: S(1) },
-		{ in: MC('sweet_berries', 8), out: S(1) },
+		{ in: QK('berry_sack'), out: S(1) },
 		{ in: MC('cocoa_beans', 16), out: S(1) },
 		{ in: MC('honey_bottle', 8), out: S(1) },
 		{ in: MC('honeycomb', 4), out: S(1) },
