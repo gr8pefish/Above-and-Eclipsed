@@ -341,7 +341,7 @@ onEvent('block.loot_tables', event => {
     event.addSimpleBlock('advancedrocketry:moonturf', 'advancedrocketry:moonturf')
 
     // 1.17-esque Ores
-    let extra_ores = ['minecraft:', 'darkerdepths:aridrock_', 'darkerdepths:limestone_']
+    let extra_ores = ['minecraft:']
 
     extra_ores.forEach(e => {
         let iron = e + "iron_ore"

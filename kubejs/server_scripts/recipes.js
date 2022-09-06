@@ -100,7 +100,7 @@ onEvent('recipes', event => {
 
 function applyChiselTags(event) {
 	event.get('chisel:basalt').add('extcaves:lavastone').add('extcaves:polished_lavastone')
-	event.get('chisel:limestone').add('extcaves:sedimentstone').add('darkerdepths:limestone').add('darkerdepths:aridrock')
+	event.get('chisel:limestone').add('extcaves:sedimentstone')
 
 	let stones = ["limestone", "dolomite"]
 	stones.forEach(e => {
@@ -211,40 +211,6 @@ onEvent('item.tags', event => {
 		.add(AE2("blue_paint_ball"))
 		.add(AE2("magenta_paint_ball"))
 		.add(AE2("black_paint_ball"))
-
-	event.get('randomium:blacklist')
-		.add(/.*creative.*/)
-		.add(/advancedrocketry.*/)
-		.add(/libvulpes.*/)
-		.add(/itemfilters.*/)
-		.add(/kubejs:failed_alchemy.*/)
-		.add(/ftblibrary.*/)
-		.add(/projectred-core.*/)
-		.add(/waterstrainer.*/)
-		.add(/ftbquests.*/)
-		.add(/occultism.*/)
-		.add(/tconstruct:molten_.*_bucket/)
-		.add(/pipez.*/)
-		.add(/forbidden_arcanus:edelwood.*/)
-		.add(/curios.*/)
-		.add(/metalbarrels.*/)
-		.add("forbidden_arcanus:arcane_dark_stone")
-		.add("#forge:dusts")
-		.add("cb_microblock:microblock")
-		.add("culinaryconstruct:sandwich")
-		.add("culinaryconstruct:food_bowl")
-		.add("patchouli:guide_book")
-		.add("randomium:randomium")
-		.add("portality:generator")
-		.add("kubejs:alchemical_laser")
-		.add("kubejs:ponder_laser_lamp")
-		.add("chiselsandbits:block_bit")
-		.add("moreminecarts:chunk_loader")
-		.add("moreminecarts:minecart_with_chunk_loader")
-		.add("chunknogobyebye:loader")
-		.add("grapplemod:repeller")
-		.add(CR("handheld_worldshaper"))
-		.add("computercraft:computer_command")
 
 	event.get('tconstruct:anvil_metal').add(CR('zinc_block'))
 	
@@ -399,7 +365,6 @@ function unwantedRecipes(event) {
 	event.remove({ id: "grapplemod:rocketdoublemotorhook" })
 	event.remove({ id: "grapplemod:magnethook" })
 	event.remove({ id: "grapplemod:rockethook" })
-	event.remove({ id: "randomium:duplicate" })
 	event.remove({ id: "fairylights:copy_color" })
 	event.remove({ id: "fairylights:edit_color" })
 	event.remove({ id: "forbidden_arcanus:eternal_stella" })
@@ -477,11 +442,6 @@ function unwantedRecipes(event) {
 	event.remove({ id: 'ravencoffee:sandwich_ham' })
 	event.remove({ id: 'ravencoffee:sandwich_beef' })
 	event.remove({ id: 'ravencoffee:sandwich_chicken' })
-	
-	event.remove({ id: 'darkerdepths:rope' })
-	event.remove({ id: 'darkerdepths:resin' })
-	event.remove({ id: 'darkerdepths:amber' })
-	event.remove({ id: 'darkerdepths:amber_block' })
 	
 	event.remove({ id: /projectred-core:(?!(.*_illumar|screwdriver|multimeter|plate)).*/ })
 	event.remove({ id: PR_T('low_load_power_wire') })
@@ -1400,37 +1360,6 @@ function unify(event) {
 	event.recipes.thermal.chiller(CR("zinc_ingot"), [Fluid.of("tconstruct:molten_zinc", 144), TE('chiller_ingot_cast')]).energy(5000)
 	event.recipes.thermal.chiller(CR("brass_ingot"), [Fluid.of("tconstruct:molten_brass", 144), TE('chiller_ingot_cast')]).energy(5000)
 	
-	// darker depths resin unification
-	event.shaped("darkerdepths:amber_block", [
-		'SS',
-		'SS'
-	], {
-		S: "darkerdepths:amber"
-	})
-	event.recipes.minecraftCraftingShapeless("4x darkerdepths:amber", "darkerdepths:amber_block")
-	
-	event.recipes.thermal.crucible(Fluid.of("thermal:resin", 250), ["darkerdepths:amber"]).energy(20)
-	event.custom({
-		"type": "tconstruct:melting",
-		"ingredient": { "item": "darkerdepths:amber" },
-		"result": {
-			"fluid": "thermal:resin",
-			"amount": 250
-		},
-		"temperature": 200,
-		"time": 20
-	})
-	event.recipes.thermal.crucible(Fluid.of("thermal:resin", 1000), ["darkerdepths:amber_block"]).energy(80)
-	event.custom({
-		"type": "tconstruct:melting",
-		"ingredient": { "item": "darkerdepths:amber_block" },
-		"result": {
-			"fluid": "thermal:resin",
-			"amount": 1000
-		},
-		"temperature": 200,
-		"time": 80
-	})
 }
 
 function trickierWindmills(event) {
@@ -1550,14 +1479,7 @@ function algalAndesite(event) {
 function oreProcessing(event) {
 
 	let stone = Item.of(MC("cobblestone"), 1).withChance(.5)
-	let limestone = Item.of("darkerdepths:limestone", 1).withChance(.5)
-	let aridrock = Item.of("darkerdepths:aridrock", 1).withChance(.5)
 	let otherstone = Item.of(OC("otherstone"), 1).withChance(.5)
-
-	event.remove({ input: "darkerdepths:aridrock_gold_ore" })
-	event.remove({ input: "darkerdepths:aridrock_iron_ore" })
-	event.remove({ input: "darkerdepths:limestone_gold_ore" })
-	event.remove({ input: "darkerdepths:limestone_iron_ore" })
 
 	event.recipes.createCrushing([Item.of("forbidden_arcanus:stellarite_piece", 1), Item.of("forbidden_arcanus:stellarite_piece", 1).withChance(.25), stone], "forbidden_arcanus:stella_arcanum")
 	event.recipes.createCrushing([Item.of("forbidden_arcanus:xpetrified_orb", 2), Item.of("forbidden_arcanus:xpetrified_orb", 1).withChance(.25), stone], "forbidden_arcanus:xpetrified_ore")
@@ -1566,16 +1488,6 @@ function oreProcessing(event) {
 	event.recipes.createCrushing([Item.of(OC("iesnium_dust"), 2), Item.of(OC("iesnium_dust"), 1).withChance(.25), otherstone], OC("iesnium_ore"))
 	event.recipes.createCrushing([Item.of(TE("sapphire"), 2), Item.of(TE("sapphire"), 1).withChance(.25), stone], TE("sapphire_ore"))
 	event.recipes.createCrushing([Item.of(TE("ruby"), 2), Item.of(TE("ruby"), 1).withChance(.25), stone], TE("ruby_ore"))
-	event.recipes.createCrushing([Item.of(MC("diamond"), 2), Item.of(MC("diamond"), 1).withChance(.25), limestone], "darkerdepths:limestone_diamond_ore")
-	event.recipes.createCrushing([Item.of(MC("diamond"), 2), Item.of(MC("diamond"), 1).withChance(.25), aridrock], "darkerdepths:aridrock_diamond_ore")
-	event.recipes.createCrushing([Item.of(MC("coal"), 2), Item.of(MC("coal"), 2).withChance(.5), limestone], "darkerdepths:limestone_coal_ore")
-	event.recipes.createCrushing([Item.of(MC("coal"), 2), Item.of(MC("coal"), 2).withChance(.5), aridrock], "darkerdepths:aridrock_coal_ore")
-	event.recipes.createCrushing([Item.of(MC("lapis_lazuli"), 12), Item.of(MC("lapis_lazuli"), 8).withChance(.25), limestone], "darkerdepths:limestone_lapis_ore")
-	event.recipes.createCrushing([Item.of(MC("lapis_lazuli"), 12), Item.of(MC("lapis_lazuli"), 8).withChance(.25), aridrock], "darkerdepths:aridrock_lapis_ore")
-	event.recipes.createCrushing([Item.of(CR('crushed_iron_ore'), 1), limestone], "darkerdepths:limestone_iron_ore")
-	event.recipes.createCrushing([Item.of(CR('crushed_iron_ore'), 1), aridrock], "darkerdepths:aridrock_iron_ore")
-	event.recipes.createCrushing([Item.of(CR('crushed_gold_ore'), 1), limestone], "darkerdepths:limestone_gold_ore")
-	event.recipes.createCrushing([Item.of(CR('crushed_gold_ore'), 1), aridrock], "darkerdepths:aridrock_gold_ore")
 
 	event.recipes.createMilling(['4x ' + MC('redstone')], TE('cinnabar')).processingTime(700)
 	event.recipes.createCrushing(['6x ' + MC('redstone')], TE('cinnabar')).processingTime(500)
@@ -2865,7 +2777,7 @@ function alchemy(event) {
 		let jsonOut = []
 		if (outputs[0] > 0)
 			jsonOut.push({
-				"item": "darkerdepths:ash",
+				"item": "desolation:ash_pile",
 				"count": outputs[0]
 			})
 		if (outputs[1] > 0)
