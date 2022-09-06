@@ -969,6 +969,9 @@ function tweaks(event) {
 		"energy": 2000
 	})
 
+	//mud craftable
+	event.recipes.createMixing( BOP("mud"), [MC("dirt"), Fluid.of('minecraft:water', 250)])
+
 }
 
 function prettierpipes(event) {
