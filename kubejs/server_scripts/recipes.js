@@ -972,6 +972,23 @@ function tweaks(event) {
 	//mud craftable
 	event.recipes.createMixing( BOP("mud"), [MC("dirt"), Fluid.of('minecraft:water', 250)])
 
+	//button sawing
+	wood_types.forEach(wood => {
+		event.recipes.createCutting('2x ' + wood + '_button', wood + '_slab').processingTime(150)
+	})
+
+	//add automatic recipe for strainer
+	let transitional = 'minecraft:string'
+	event.recipes.createSequencedAssembly([
+		'waterstrainer:strainer_survivalist',
+	], 'minecraft:stick', [
+		event.recipes.createDeploying(transitional, [transitional, FD('canvas')]),
+		event.recipes.createDeploying(transitional, [transitional, FD('canvas')]),
+		event.recipes.createDeploying(transitional, [transitional, FD('canvas')])
+	]).transitionalItem(transitional)
+		.loops(1)
+		.id('waterstrainer:strainer_survivalist')
+
 }
 
 function prettierpipes(event) {
