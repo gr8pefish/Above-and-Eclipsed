@@ -73,6 +73,11 @@
 					title: "Automated"
 				}
 			]
+			rewards: [{
+				id: "7C389D3C0EBDFCC2"
+				type: "item"
+				item: "minecraft:kelp"
+			}]
 		}
 		{
 			title: "Catching Sediment"
@@ -542,7 +547,7 @@
 				""
 				"These Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing."
 				""
-				"We've also included a few andesite machines to help jumpstart your factory."
+				"We've also included a few andesite machines to help you jumpstart your factory."
 				""
 				"Happy engineering!"
 			]
@@ -564,7 +569,7 @@
 					id: "4925B384024C37F8"
 					type: "item"
 					item: "kubejs:andesite_machine"
-					count: 2
+					count: 3
 				}
 			]
 		}
@@ -756,6 +761,26 @@
 			tasks: [{
 				id: "4DC18CB3A19686E5"
 				type: "checkmark"
+			}]
+		}
+		{
+			title: "Can't Find an Ocean?"
+			x: 5.0d
+			y: 0.0d
+			shape: "circle"
+			dependency_requirement: "all_started"
+			optional: true
+			id: "0BE2C7A45088ABBE"
+			tasks: [{
+				id: "64B13C5F8CB4E83F"
+				type: "checkmark"
+				title: "Free kelp!"
+			}]
+			rewards: [{
+				id: "1736B7728D20FC4E"
+				type: "item"
+				item: "minecraft:kelp"
+				count: 10
 			}]
 		}
 	]

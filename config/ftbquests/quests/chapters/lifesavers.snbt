@@ -757,5 +757,109 @@
 				count: 9
 			}]
 		}
+		{
+			title: "Straw Man"
+			x: -6.0d
+			y: 1.0d
+			description: [
+				"Hit grass with a knife to get straw."
+				"In addition, killing mobs with this (e.g. cows) will guarantee at least one drop (e.g. leather)!"
+			]
+			id: "5B4F7917B5D5FB1D"
+			tasks: [{
+				id: "1B27D7ED059193C7"
+				type: "item"
+				title: "Any #farmersdelight:straw_harvesters"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "farmersdelight:straw_harvesters"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3F4217A820B92A14"
+				type: "item"
+				item: "farmersdelight:straw"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "String Me Up"
+			x: -6.0d
+			y: 2.0d
+			description: ["Convert wheat seeds to flax seeds and harvest the crops to reliably get string"]
+			dependencies: ["5B4F7917B5D5FB1D"]
+			id: "25C323DACAE51852"
+			tasks: [
+				{
+					id: "7BEF49C5FF5854DB"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+				{
+					id: "0E6B46CD6164F010"
+					type: "item"
+					item: "supplementaries:flax_seeds"
+				}
+				{
+					id: "48F7213AC8A97E63"
+					type: "item"
+					item: "supplementaries:flax"
+				}
+			]
+			rewards: [{
+				id: "6506143ADA506B92"
+				type: "item"
+				item: "minecraft:string"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Finally, Backpacks!"
+			x: -6.0d
+			y: 3.0d
+			description: ["Equip to your baubles backpack slot and open with a hotkey ('c' by default)"]
+			dependencies: ["25C323DACAE51852"]
+			dependency_requirement: "all_started"
+			id: "6ECFB4AD20F3F195"
+			tasks: [{
+				id: "7C469D570D92C1EA"
+				type: "item"
+				title: "Any #improvedbackpacks:backpack"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "improvedbackpacks:backpack"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1874EC3D9B3BB5BD"
+				type: "item"
+				item: "improvedbackpacks:tanned_leather"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Pockets"
+			x: -7.0d
+			y: 3.0d
+			description: ["Don't forget about these!"]
+			dependencies: ["6ECFB4AD20F3F195"]
+			id: "19AF54E8C64EB906"
+			tasks: [{
+				id: "655876B5B10BCE94"
+				type: "item"
+				item: "improvedbackpacks:tiny_pocket"
+			}]
+			rewards: [{
+				id: "6046E2EF89EFDC3B"
+				type: "item"
+				item: "improvedbackpacks:sewing_spool"
+			}]
+		}
 	]
 }

@@ -632,7 +632,7 @@ function tweaks(event) {
 	event.remove({ id: "improvedbackpacks:sewing_spool" })
 	event.shaped("improvedbackpacks:sewing_spool", [
 		'#forge:string',
-		'#forge:rods/wooden'
+		'farmersdelight:straw'
 	]
 	)
 
