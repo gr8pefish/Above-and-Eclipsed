@@ -34,6 +34,7 @@ let OC = (id, x) => MOD("occultism", id, x)
 let FA = (id, x) => MOD("forbidden_arcanus", id, x)
 let IB = (id, x) => MOD("improved_backpacks", id, x)
 let QU = (id, x) => MOD("quark", id, x)
+let TS = (id, x) => MOD("toms_storage", id, x)
 //
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -514,6 +515,31 @@ function tweaks(event) {
 		S: MC('stick'),
 		F: MC('feather')
 	})
+
+	event.remove({ output: TS("ts.inventory_hopper_basic") })
+	event.shaped( TS("ts.inventory_hopper_basic"), [
+		'ABA',
+		' X '
+	], {
+		A: 'toms_storage:ts.inventory_cable',
+		B: 'prettypipes:pipe',
+		X: MC('hopper')
+	})
+
+	event.remove({ output: TS("ts.crafting_terminal") })
+	event.smithing( TS("ts.crafting_terminal"), "toms_storage:ts.storage_terminal", MC("diamond"))
+
+	event.remove({ output: TS("ts.inventory_cable_connector") })
+	event.shaped( TS("ts.inventory_cable_connector"), [
+		'CAC',
+		'ABA',
+		'CAC'
+	], {
+		A: 'toms_storage:ts.inventory_cable',
+		B: 'prettypipes:pipe',
+		C: F('#chests/wooden')
+	})
+
 	
 	event.remove({ id: "forbidden_arcanus:netherite_blacksmith_gavel" })
 	event.smithing("forbidden_arcanus:netherite_blacksmith_gavel", "forbidden_arcanus:diamond_blacksmith_gavel", MC("netherite_ingot"))
@@ -1221,6 +1247,10 @@ function drawersop(event) {
 		})
 	})
 
+	// Make concealment key cheaper
+	event.remove({ output: SD("shroud_key")})
+	event.shapeless("storagedrawers:shroud_key", ["storagedrawers:drawer_key", "minecraft:feather"])
+
 }
 
 function unify(event) {
@@ -1774,6 +1804,8 @@ function andesiteMachine(event) {
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('create:andesite_tunnel', 4)
 	andesite_machine('kubejs:pipe_module_utility', 4)
+	andesite_machine('toms_storage:ts.storage_terminal', 1, 'toms_storage:ts.inventory_cable')
+
 
 }
 
@@ -1829,6 +1861,7 @@ function copperMachine(event) {
 	copper_machine('thermal:dynamo_magmatic', 1, TE('rf_coil'))
 	copper_machine('thermal:device_water_gen', 1, MC('bucket'))
 	copper_machine('create:smart_fluid_pipe', 2)
+	copper_machine('toms_storage:ts.inventory_connector', 1, 'toms_storage:ts.inventory_cable')
 
 }
 
@@ -1899,6 +1932,8 @@ function brassMachine(event) {
 	brass_machine('create:brass_funnel', 4)
 	brass_machine('create:brass_tunnel', 4)
 	brass_machine('kubejs:pipe_module_tier_1', 4)
+	brass_machine('storagedrawers:controller', 1, MC('diamond'))
+	brass_machine('storagedrawers:controller_slave', 1, MC('gold_ingot'))
 
 }
 
@@ -1969,8 +2004,6 @@ function zincMachine(event) {
 	zinc_machine(TE('device_collector'), 1, MC('ender_pearl'))
 	zinc_machine(TE('device_nullifier'), 1, MC('lava_bucket'))
 	zinc_machine(TE('device_potion_diffuser'), 1, MC('glass_bottle'))
-	zinc_machine('storagedrawers:controller', 1, MC('diamond'))
-	zinc_machine('storagedrawers:controller_slave', 1, MC('gold_ingot'))
 	zinc_machine('torchmaster:megatorch', 1, MC('torch'))
 	zinc_machine('thermal:upgrade_augment_2', 1, MC('redstone'))
 
