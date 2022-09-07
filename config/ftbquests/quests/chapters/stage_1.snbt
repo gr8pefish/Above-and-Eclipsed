@@ -134,7 +134,7 @@
 				"Gathering Andesite manually takes time. Thankfully, bedrock can cause lava to form Andesite infinitely."
 				""
 				"At this time it is best to set up drills to break generated blocks between lava and water."
-				"Since bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides."
+				"Since bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides. Baskets may help with this."
 			]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
@@ -217,6 +217,12 @@
 					title: "Automated"
 				}
 			]
+			rewards: [{
+				id: "543A310C8D79ADB2"
+				type: "item"
+				item: "kubejs:andesite_machine"
+				count: 2
+			}]
 		}
 		{
 			title: "Log Stripper"
@@ -449,6 +455,12 @@
 					title: "Automated"
 				}
 			]
+			rewards: [{
+				id: "35880D459D7230DD"
+				type: "item"
+				item: "kubejs:andesite_machine"
+				count: 2
+			}]
 		}
 		{
 			title: "Algae Cooker"
@@ -569,7 +581,7 @@
 					id: "4925B384024C37F8"
 					type: "item"
 					item: "kubejs:andesite_machine"
-					count: 3
+					count: 4
 				}
 			]
 		}
@@ -754,7 +766,7 @@
 			description: [
 				"The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated."
 				""
-				"Be reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort."
+				"Be reassured that you already have access to tools from later ages, such as filtering - though not without a bit of manual effort."
 			]
 			dependencies: ["5799D55BB26BA52C"]
 			id: "6892AE55581393C6"
@@ -762,14 +774,36 @@
 				id: "4DC18CB3A19686E5"
 				type: "checkmark"
 			}]
+			rewards: [
+				{
+					id: "6FE0D2909E8164F9"
+					type: "item"
+					item: "minecraft:sand"
+					count: 64
+				}
+				{
+					id: "0E0732C3DF9EF2B8"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 64
+				}
+				{
+					id: "5A38F8FBD0CAE63B"
+					type: "item"
+					item: "minecraft:clay_ball"
+					count: 64
+				}
+			]
 		}
 		{
 			title: "Can't Find an Ocean?"
-			x: 5.0d
-			y: 0.0d
+			x: 6.5d
+			y: 1.0d
 			shape: "circle"
+			hide_dependency_lines: true
+			dependencies: ["5799D55BB26BA52C"]
+			hide: true
 			dependency_requirement: "all_started"
-			optional: true
 			id: "0BE2C7A45088ABBE"
 			tasks: [{
 				id: "64B13C5F8CB4E83F"
@@ -781,6 +815,78 @@
 				type: "item"
 				item: "minecraft:kelp"
 				count: 10
+			}]
+		}
+		{
+			title: "Preparations"
+			icon: "minecraft:cobblestone_stairs"
+			x: 4.0d
+			y: -1.0d
+			shape: "circle"
+			description: [
+				"Careful! Before you are ready to embark on the journey of automation, it can help to set up a basic workshop first."
+				""
+				"Here are some items for a successful start."
+			]
+			dependencies: ["5799D55BB26BA52C"]
+			id: "7D6BC99CCCB29924"
+			tasks: [{
+				id: "60553968E845A5DD"
+				type: "item"
+				item: "create:wrench"
+			}]
+			rewards: [
+				{
+					id: "24DFC6E24F62D97A"
+					type: "item"
+					item: "create:crafting_blueprint"
+					count: 3
+				}
+				{
+					id: "2905958AB1A416C9"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "66A8B146C9092114"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "1A69FB5734A41A57"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "68FF5F6A8F158CB8"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "3AA619FE84FFCEC3"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "4C819EF957C7DE25"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			shape: "circle"
+			description: ["This can help remove fish spawns"]
+			hide_dependency_lines: false
+			dependencies: ["1CE8BFE460CB41E0"]
+			hide: true
+			id: "211B4CABC36C28B7"
+			tasks: [{
+				id: "510C53F72AF0BAA5"
+				type: "item"
+				item: "torchmaster:dreadlamp"
 			}]
 		}
 	]

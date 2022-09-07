@@ -11,8 +11,8 @@
 		{
 			title: "Choo Choo"
 			icon: "minecraft:chest_minecart"
-			x: -2.0d
-			y: 1.0d
+			x: 0.0d
+			y: -2.0d
 			description: ["Minecarts are the most flexible mid-range item transport available to you. Seriously, once you've build one railway connection to transfer items between areas, you will never be able to stop adding more. The convenience of these loaders is just off the charts."]
 			id: "2A2FA80784667833"
 			tasks: [
@@ -44,8 +44,8 @@
 		{
 			title: "Control Centre"
 			icon: "projectred-illumination:red_inverted_fixture_light"
-			x: -4.0d
-			y: 1.0d
+			x: 0.0d
+			y: -3.0d
 			description: [
 				"With new circuitry and wiring capability, you can make your factory a little smarter. Also those lamps you can make are really pretty."
 				""
@@ -90,8 +90,8 @@
 		}
 		{
 			title: "Engineer's Companion"
-			x: -5.0d
-			y: -1.0d
+			x: -6.0d
+			y: 3.0d
 			description: ["Especially while building new Contraptions, this gadget is incredibly handy. Instead of filling up your pockets with components, simply pick up the toolbox from the workshop and bring it with you."]
 			id: "26C39961F2E2ABF2"
 			tasks: [{
@@ -116,7 +116,7 @@
 		}
 		{
 			title: "Immersive Minimap"
-			x: -6.0d
+			x: -8.0d
 			y: -3.0d
 			description: [
 				"A cute alternative to the all-powerful map hud is the atlas."
@@ -149,8 +149,8 @@
 		}
 		{
 			title: "Big Barrels II"
-			x: 1.0d
-			y: 3.0d
+			x: -6.0d
+			y: 2.0d
 			description: ["If you are looking for extra large but specialised storage space in a block, check out Storage Drawers."]
 			id: "382EBC32AC27C839"
 			tasks: [{
@@ -175,7 +175,7 @@
 		}
 		{
 			title: "The Joy of Cooking"
-			x: 0.0d
+			x: -2.0d
 			y: -3.0d
 			description: ["Stoves are a good-looking and very useful campfire alternative. Together with a Cooking Pot, it can help you prepare the most delicious meals in the game."]
 			id: "0E4476BA80B316F6"
@@ -202,7 +202,7 @@
 		}
 		{
 			title: "Hotswap replace"
-			x: -3.0d
+			x: -4.0d
 			y: -1.0d
 			description: ["Exchangers make for a nice tool to replace blocks with others. Saves you a lot of digging."]
 			id: "6D7D504E9DC22590"
@@ -466,8 +466,8 @@
 		}
 		{
 			title: "Blockstacker"
-			x: -1.0d
-			y: -1.0d
+			x: -4.0d
+			y: -3.0d
 			description: ["Construction wands can extend complete walls or surfaces of blocks by the click of a button."]
 			id: "2F469F6F1511D9C4"
 			tasks: [{
@@ -524,8 +524,8 @@
 		}
 		{
 			title: "Pass me the butter"
-			x: 3.0d
-			y: -1.0d
+			x: 2.0d
+			y: -3.0d
 			description: ["Human Arms just aren't evolved to build machines efficiently, yet. Thankfully this gadget can make up for it by increasing your reach distance significantly."]
 			id: "7061F42CF050ADCA"
 			tasks: [{
@@ -548,8 +548,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -3.0d
+			x: -8.0d
+			y: -2.0d
 			description: ["Sometimes it is desirable to travel to a specific Biome. The Nature's Compass can at least point you in the right direction."]
 			id: "45E7810E21F6F9AE"
 			tasks: [{
@@ -571,8 +571,8 @@
 		}
 		{
 			title: "Big Barrels"
-			x: -1.0d
-			y: 3.0d
+			x: -6.0d
+			y: 1.0d
 			description: ["In case you need large universal storage space in a block, check out the upgrade options for wooden barrels."]
 			id: "50E2D6459F3D68C0"
 			tasks: [{
@@ -614,8 +614,8 @@
 		}
 		{
 			title: "House Building Cannon"
-			x: 1.0d
-			y: -1.0d
+			x: -4.0d
+			y: 1.0d
 			description: ["With the help of Schematicannons, any .nbt Schematic can be built into your world. Use it to replicate parts of your Building, or even to prepare it in a completely different World ahead of time."]
 			id: "09EB29F838620371"
 			tasks: [{
@@ -632,8 +632,8 @@
 		}
 		{
 			title: "Big Plans"
-			x: 2.0d
-			y: -3.0d
+			x: -4.0d
+			y: 0.0d
 			description: [
 				"These Blueprints can be given one or more crafting recipes, which they then apply to your held items whenever you right-click them."
 				""
@@ -655,7 +655,7 @@
 		{
 			title: "Pressure Tube"
 			x: 0.0d
-			y: 1.0d
+			y: -1.0d
 			description: [
 				"Belts and Arms are great, but sometimes we will still give in to the guilty pleasure of using item pipes."
 				""
@@ -676,8 +676,8 @@
 		}
 		{
 			title: "Induction Conduits"
-			x: 2.0d
-			y: 1.0d
+			x: 0.0d
+			y: 0.0d
 			description: [
 				"With the rise of Inductive Machinery, you'll want to have the option to connect dynamos and machines together in an energy grid."
 				""
@@ -699,8 +699,8 @@
 		}
 		{
 			title: "Bottoms up!"
-			x: -7.0d
-			y: -1.0d
+			x: -2.0d
+			y: -2.0d
 			description: ["You can use a Keg to create your favourite brews. Drink Responsibly."]
 			id: "7D63FF6A2243A06B"
 			tasks: [{
@@ -736,17 +736,12 @@
 				}
 				consume_items: false
 			}]
-			rewards: [{
-				id: "3D69B03DFCB41179"
-				type: "item"
-				item: "randomium:randomium_ore"
-			}]
 		}
 		{
 			title: "The other Gamemode"
 			icon: "magicfeather:magicfeather"
-			x: 3.0d
-			y: 3.0d
+			x: 2.0d
+			y: -2.0d
 			description: ["Magic Feathers grant flight to the weilder, albeit only within the range of a Beacon Beam. Still, this should be of great help in setting up big factories!"]
 			id: "0F4B0608CBF966E6"
 			tasks: [
@@ -773,7 +768,7 @@
 		{
 			title: "Straw Man"
 			x: -6.0d
-			y: 1.0d
+			y: -3.0d
 			description: [
 				"Hit grass with a knife to get straw."
 				"In addition, killing mobs with this (e.g. cows) will guarantee at least one drop (e.g. leather)!"
@@ -801,7 +796,7 @@
 		{
 			title: "String Me Up"
 			x: -6.0d
-			y: 2.0d
+			y: -2.0d
 			description: ["Convert wheat seeds to flax seeds and harvest the crops to reliably get string"]
 			dependencies: ["5B4F7917B5D5FB1D"]
 			id: "25C323DACAE51852"
@@ -832,7 +827,7 @@
 		{
 			title: "Finally, Backpacks!"
 			x: -6.0d
-			y: 3.0d
+			y: -1.0d
 			description: ["Equip to your baubles backpack slot and open with a hotkey ('c' by default)"]
 			dependencies: ["25C323DACAE51852"]
 			dependency_requirement: "all_started"
@@ -858,8 +853,8 @@
 		}
 		{
 			title: "Pockets"
-			x: -7.0d
-			y: 3.0d
+			x: -6.0d
+			y: 0.0d
 			description: ["Don't forget about these!"]
 			dependencies: ["6ECFB4AD20F3F195"]
 			id: "19AF54E8C64EB906"
@@ -872,6 +867,77 @@
 				id: "6046E2EF89EFDC3B"
 				type: "item"
 				item: "improvedbackpacks:sewing_spool"
+			}]
+		}
+		{
+			title: "Sippin Pretty"
+			x: -2.0d
+			y: -1.0d
+			description: ["Simply tea and the addons are included, enjoy!"]
+			id: "66AAF19A24386E44"
+			tasks: [{
+				id: "2B1FCB5B456D4AB9"
+				type: "item"
+				item: {
+					id: "simplytea:cup_tea_black"
+					Count: 1b
+					tag: {
+						Damage: 0
+						BlockStateTag: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Building Galore!"
+			icon: "framedblocks:framed_slope"
+			x: -4.0d
+			y: -2.0d
+			description: ["Framed Blocks, Framed Drawers, Create Deco and Effortless Building are all included!"]
+			id: "5A9E8780D8B43888"
+			tasks: [
+				{
+					id: "191EA2FE6794A234"
+					type: "item"
+					item: "framedblocks:framed_slope"
+				}
+				{
+					id: "3914C9A4FE988194"
+					type: "item"
+					item: "framedcompactdrawers:framed_full_one"
+				}
+				{
+					id: "6EC10EDBA74D6396"
+					type: "item"
+					item: "createdeco:andesite_catwalk"
+				}
+				{
+					id: "3AFD4087F2627B28"
+					type: "checkmark"
+					title: "Try Effortless Building (seriously!)"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -3.0d
+			description: ["Many performance mods have been included. Check your settings!"]
+			id: "32A4D4ED79D3D373"
+			tasks: [{
+				id: "7966F2469B345203"
+				type: "checkmark"
+				title: "Performance Settings"
+			}]
+		}
+		{
+			title: "Comforting"
+			x: -8.0d
+			y: -1.0d
+			id: "163984833931994E"
+			tasks: [{
+				id: "1EBE37FC9C6DCAF9"
+				type: "item"
+				item: "comforts:sleeping_bag_white"
 			}]
 		}
 	]
