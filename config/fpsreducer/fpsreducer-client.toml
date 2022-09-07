@@ -21,7 +21,7 @@
 	#Range: 0.1 ~ 2.0
 	hudScale = 1.0
 	#Enable HUD.
-	hudEnabled = true
+	hudEnabled = false
 	#Detect movement of player position. (0:OFF, 1:Riding/Flying, 2:Always)
 	#Range: 0 ~ 2
 	detectMoving = 1
