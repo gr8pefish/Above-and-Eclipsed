@@ -7,6 +7,10 @@ onEvent('jei.hide.items', event => {
 	event.hide('quark:backpack')
 	event.hide('#quark:shards')
 	event.hide('quark:pipe')
+	event.hide('create:crushed_silver_ore')
+	event.hide('create:crushed_tin_ore')
+	event.hide('create:crushed_brass_ore')
+	event.hide('create:crushed_aluminum_ore')
 })
 
 onEvent('jei.subtypes', event => {
