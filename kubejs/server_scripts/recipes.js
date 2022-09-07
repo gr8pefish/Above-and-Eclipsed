@@ -989,6 +989,12 @@ function tweaks(event) {
 		.loops(1)
 		.id('waterstrainer:strainer_survivalist')
 
+	//make easier exchangers
+	event.replaceInput({mod: 'exchangers'}, 'minecraft:ender_eye', 'create:andesite_alloy')
+	event.replaceInput({id: 'exchangers:vanilla/exchanger_core_tier1'}, 'minecraft:ender_pearl', 'create:andesite_alloy')
+	event.replaceInput({id: 'exchangers:vanilla/easy/exchanger_core_tier3'}, 'minecraft:diamond', 'create:andesite_alloy')
+	event.replaceInput({id: 'exchangers:vanilla/easy/exchanger_core_tier3'}, 'minecraft:diamond_block', 'minecraft:diamond')
+
 }
 
 function prettierpipes(event) {
