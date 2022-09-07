@@ -943,5 +943,55 @@
 				item: "comforts:sleeping_bag_white"
 			}]
 		}
+		{
+			title: "Bouncy!"
+			x: -8.0d
+			y: 0.0d
+			id: "6F7CDD7F0052DFE3"
+			tasks: [{
+				id: "49CBEAA2BD9564F4"
+				type: "item"
+				title: "Any #tconstruct:slimeslings"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:slimeslings"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3C15EC18DDD0F79A"
+				type: "item"
+				item: {
+					id: "tconstruct:slime_boots"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 546.0f
+							"tconstruct:armor": 0.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:bouncy"
+								level: 1s
+							}
+							{
+								name: "tconstruct:leaping"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 5
+						}
+					}
+				}
+			}]
+		}
 	]
 }
