@@ -893,7 +893,10 @@
 			icon: "framedblocks:framed_slope"
 			x: -4.0d
 			y: -2.0d
-			description: ["Framed Blocks, Framed Drawers, Create Deco and Effortless Building are all included!"]
+			description: [
+				"Framed Blocks, Framed Drawers, Create Deco and Effortless Building are all included!"
+				"For effortless building, don't forget to go back to normal placement mode once you're done."
+			]
 			id: "5A9E8780D8B43888"
 			tasks: [
 				{
