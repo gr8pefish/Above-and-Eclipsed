@@ -445,5 +445,72 @@
 				title: "Unlock Chapter 4a"
 			}]
 		}
+		{
+			title: "Going Deep"
+			icon: "minecraft:iron_ore"
+			x: -12.5d
+			y: -1.5d
+			description: ["Here's something to get you started. You won't be able to repair this hammer, and it has no modifiers - it's just to get you through the early game mining grind. Invest in Tinker's Tools!"]
+			dependencies: ["75FB28B253B14876"]
+			id: "6A239C93638578E3"
+			tasks: [{
+				id: "3D809C040DCE341E"
+				type: "checkmark"
+				title: "Hammer Time!"
+			}]
+			rewards: [{
+				id: "1D38D6DBEABFE439"
+				type: "item"
+				item: {
+					id: "tconstruct:sledge_hammer"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.4f
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:mining_speed": 3.2f
+							"tconstruct:attack_damage": 7.425f
+							"tconstruct:harvest_level": 4.0f
+							"tconstruct:durability": 3900.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:cultivated"
+								level: 1s
+							}
+							{
+								name: "tconstruct:smite"
+								level: 2s
+							}
+							{
+								name: "tconstruct:momentum"
+								level: 3s
+							}
+							{
+								name: "tconstruct:two_handed"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:hepatizon"
+							"tconstruct:wood"
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 0
+							upgrades: 0
+						}
+					}
+				}
+			}]
+		}
 	]
 }
