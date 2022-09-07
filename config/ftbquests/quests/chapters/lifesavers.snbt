@@ -125,10 +125,9 @@
 			]
 			id: "0B8816319F81C12A"
 			tasks: [{
-				id: "180D1CB1BB7EB0AA"
+				id: "1AF5CF1C0EA7DB2B"
 				type: "item"
-				item: "antiqueatlas:empty_antique_atlas"
-				consume_items: false
+				item: "minecraft:book"
 			}]
 			rewards: [
 				{
@@ -140,6 +139,11 @@
 					id: "4958596378CDE1F3"
 					type: "item"
 					item: "minecraft:item_frame"
+				}
+				{
+					id: "7A889A6DDD96B062"
+					type: "item"
+					item: "minecraft:compass"
 				}
 			]
 		}
@@ -181,11 +185,20 @@
 				item: "farmersdelight:stove"
 				consume_items: false
 			}]
-			rewards: [{
-				id: "02BA7C4E293DD955"
-				type: "item"
-				item: "minecraft:salmon"
-			}]
+			rewards: [
+				{
+					id: "17BA7A89323537A0"
+					type: "item"
+					item: "minecraft:sweet_berries"
+					count: 8
+				}
+				{
+					id: "01256B5733E72953"
+					type: "item"
+					item: "farmersdelight:rice_panicle"
+					count: 8
+				}
+			]
 		}
 		{
 			title: "Hotswap replace"
