@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "block/create_casing",
-        "front": "block/dispenser_front_vertical",
-        "side": "block/create_casing"
-    }
-}
