@@ -4089,7 +4089,7 @@
 			icon: "thermal:machine_press"
 			x: -2.0d
 			y: 12.25d
-			shape: "circle"
+			shape: "gear"
 			subtitle: "30 Silver"
 			description: [
 				"Getting to the Brass Age is hard work!"
@@ -4097,6 +4097,7 @@
 				"The avid salesman can come here for purchasing Trading Machines from the get go. This should help you take off!"
 			]
 			dependencies: ["6AC1CED0D341150E"]
+			size: 1.5d
 			id: "4DFE4FD3B504AF4B"
 			tasks: [{
 				id: "3E2EAC7B2D274669"
