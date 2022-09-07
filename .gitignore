@@ -7,7 +7,6 @@ paintings/**
 palettes/**
 local/**
 patchouli_books/**
-resourcepacks/**
 saves/**
 schematics/**
 screenshots/**
@@ -31,3 +30,4 @@ pregen/
 config/spark/activity.json
 config/oculus.properties
 shaderpacks/ComplementaryShaders_v4.6.zip.txt
+options.txt
