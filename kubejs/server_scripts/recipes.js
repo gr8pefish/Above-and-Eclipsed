@@ -516,6 +516,7 @@ function tweaks(event) {
 		F: MC('feather')
 	})
 
+	//Tom's Simple Storage Recipes
 	event.remove({ output: TS("ts.inventory_hopper_basic") })
 	event.shaped( TS("ts.inventory_hopper_basic"), [
 		'ABA',
@@ -527,7 +528,7 @@ function tweaks(event) {
 	})
 
 	event.remove({ output: TS("ts.crafting_terminal") })
-	event.smithing( TS("ts.crafting_terminal"), "toms_storage:ts.storage_terminal", MC("diamond"))
+	event.smithing( TS("ts.crafting_terminal"), TS("ts.storage_terminal"), MC("diamond"))
 
 	event.remove({ output: TS("ts.inventory_cable_connector") })
 	event.shaped( TS("ts.inventory_cable_connector"), [
@@ -539,6 +540,12 @@ function tweaks(event) {
 		B: 'prettypipes:pipe',
 		C: F('#chests/wooden')
 	})
+
+	event.replaceInput({ output: TS("ts.wireless_terminal") }, "minecraft:comparator", "minecraft:redstone_torch")
+	event.replaceInput({ output: TS("ts.wireless_terminal") }, "minecraft:ender_pearl", AE2("ender_dust"))
+
+	event.remove({ output: TS("ts.adv_wireless_terminal") })
+	event.smithing(TS("ts.adv_wireless_terminal"), TS("ts.wireless_terminal"), "kubejs:fluix_casing", )
 
 	
 	event.remove({ id: "forbidden_arcanus:netherite_blacksmith_gavel" })
@@ -674,6 +681,28 @@ function tweaks(event) {
 	tweak_casing('invar', [TE('invar_ingot'), 'minecraft:stone'], KJ)
 	tweak_casing('enderium', [MC('ender_pearl'), 'minecraft:obsidian'], KJ)
 	tweak_casing('fluix', [TE('lead_plate'), 'minecraft:blackstone'], KJ)
+
+	//Liquid transmution recipes for tinkers
+	let liquidTransmute = (input, cast_consumed, liquid, amt, output, cooling_time) => {
+		if (cooling_time == undefined) cooling_time = 30; //no default params, sad
+		event.custom({
+			"type": "tconstruct:casting_basin",
+			"cast": input,
+			"cast_consumed": cast_consumed,
+			"fluid": {
+				"name": liquid,
+				"amount": amt
+			},
+			"result": output,
+			"cooling_time": cooling_time
+		})
+	}
+
+	let liquidTransmuteConsume = (input, liquid, amt, output, cooling_time) => {
+		liquidTransmute(input, true, liquid, amt, output, cooling_time)
+	}
+
+	liquidTransmuteConsume(F("#cobblestone"), "tconstruct:molten_obsidian", 50, MC("blackstone"))
 
 	event.custom({
 		"type": "tconstruct:melting",
@@ -1696,6 +1725,8 @@ function alloys(event) {
 	event.recipes.thermal.smelter(TC("rose_gold_ingot", 2), [CR("copper_ingot"), MC("gold_ingot")])
 	event.recipes.thermal.smelter(TE("constantan_ingot", 2), [CR("copper_ingot"), TE("nickel_ingot")])
 
+	event.replaceInput({id: 'moreminecarts:silica_steel_mix'}, MC('quartz'), AE2('#crystals/nether'))
+
 }
 
 function electronTube(event) {
@@ -2027,7 +2058,7 @@ function zincMachine(event) {
 	}
 
 	zinc_machine(TE('device_rock_gen'), 1, MC('piston'))
-	zinc_machine(TE('device_collector'), 1, MC('ender_pearl'))
+	zinc_machine(TE('device_collector'), 1, AE2("ender_dust"))
 	zinc_machine(TE('device_nullifier'), 1, MC('lava_bucket'))
 	zinc_machine(TE('device_potion_diffuser'), 1, MC('glass_bottle'))
 	zinc_machine('torchmaster:megatorch', 1, MC('torch'))
