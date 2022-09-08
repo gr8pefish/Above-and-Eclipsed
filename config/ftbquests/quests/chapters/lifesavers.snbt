@@ -525,7 +525,7 @@
 		{
 			title: "Pass me the butter"
 			x: 2.0d
-			y: -3.0d
+			y: -1.0d
 			description: ["Human Arms just aren't evolved to build machines efficiently, yet. Thankfully this gadget can make up for it by increasing your reach distance significantly."]
 			id: "7061F42CF050ADCA"
 			tasks: [{
@@ -740,8 +740,8 @@
 		{
 			title: "The other Gamemode"
 			icon: "magicfeather:magicfeather"
-			x: 2.0d
-			y: -2.0d
+			x: -8.0d
+			y: 2.0d
 			description: ["Magic Feathers grant flight to the weilder, albeit only within the range of a Beacon Beam. Still, this should be of great help in setting up big factories!"]
 			id: "0F4B0608CBF966E6"
 			tasks: [
@@ -992,6 +992,138 @@
 					}
 				}
 			}]
+		}
+		{
+			title: "Tinkering Away"
+			x: 2.0d
+			y: -3.0d
+			description: ["All the info you'll ever need"]
+			id: "6A2657219F573450"
+			tasks: [{
+				id: "55360428DC8D5B08"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+			rewards: [{
+				id: "6FD1610B5ECD8469"
+				type: "item"
+				item: "tconstruct:encyclopedia"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 1.0d
+			description: ["A nether essential"]
+			id: "7E6BD0080D68B98C"
+			tasks: [{
+				id: "4A8C81F8506160D6"
+				type: "item"
+				item: {
+					id: "grapplemod:grapplinghook"
+					Count: 1b
+					tag: {
+						Damage: 0
+						custom: {
+							doublehook: 0b
+							motor: 0b
+							phaserope: 0b
+							attract: 0b
+							rocket: 0b
+							hookgravity: 1.0d
+							repelforce: 1.0d
+							attractradius: 3.0d
+							pullbackwards: 1b
+							smartmotor: 0b
+							detachonkeyrelease: 0b
+							angle: 20.0d
+							crc32: 2252267022L
+							rocket_vertical_angle: 0.0d
+							rocket_force: 1.0d
+							rocket_refuel_ratio: 15.0d
+							motorwhencrouching: 0b
+							motorwhennotcrouching: 1b
+							motordampener: 0b
+							rocket_active_time: 0.5d
+							throwspeed: 2.0d
+							motoracceleration: 0.2d
+							enderstaff: 0b
+							oneropepull: 0b
+							sneakingverticalthrowangle: 0.0d
+							smartdoublemotor: 1b
+							repel: 0b
+							sneakingangle: 10.0d
+							motormaxspeed: 4.0d
+							playermovementmult: 1.0d
+							reelin: 1b
+							sticky: 0b
+							verticalthrowangle: 0.0d
+							maxlen: 30.0d
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: ["Can be upgraded to 7x7!"]
+			id: "3D5A4941B5818A93"
+			tasks: [{
+				id: "469970FCD6233768"
+				type: "item"
+				item: {
+					id: "thermal:flux_drill"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			description: ["Blocks mob spawns in a 64 block radius"]
+			id: "71D32FE9414739F2"
+			tasks: [{
+				id: "67191D3D4F000969"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["Stops movement on belts"]
+			id: "4952B047A915607D"
+			tasks: [{
+				id: "1844BDDC03419E7F"
+				type: "item"
+				item: {
+					id: "create:diving_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Turtles!"
+			x: 0.0d
+			y: 2.0d
+			description: ["Automate everything with code!"]
+			id: "3F112AFAC9ABEB23"
+			tasks: [
+				{
+					id: "792FCB71A94FBF6C"
+					type: "item"
+					item: "computercraft:computer_normal"
+				}
+				{
+					id: "7E1A9C7DFF683F04"
+					type: "item"
+					item: "computercraft:turtle_normal"
+				}
+			]
 		}
 	]
 }
