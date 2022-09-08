@@ -1148,138 +1148,6 @@
 			]
 		}
 		{
-			title: "16x Andesite Alloy"
-			icon: "create:andesite_alloy"
-			disable_toast: true
-			x: -5.0d
-			y: 6.0d
-			shape: "hexagon"
-			subtitle: "8 Silver"
-			id: "7B5B7BB304E14C6D"
-			tasks: [{
-				id: "7106D948A6148F3F"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "086F1AC96402FBDE"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_andesite_alloy"
-				}
-				{
-					id: "6B9745A3B2507A90"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "8x Silica Steel"
-			icon: "moreminecarts:silica_steel"
-			disable_toast: true
-			x: -6.0d
-			y: 6.0d
-			shape: "hexagon"
-			subtitle: "16 Silver"
-			id: "01F3EDC327B63908"
-			tasks: [{
-				id: "59D460B0062FCD02"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "7FDA0A2FE7C3CC29"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_silica_steel"
-				}
-				{
-					id: "20A44ED461BA79A6"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "8x Brass Ingot"
-			icon: "create:brass_ingot"
-			disable_toast: true
-			x: -5.0d
-			y: 7.0d
-			shape: "hexagon"
-			subtitle: "48 Silver"
-			id: "040A0552921E1115"
-			tasks: [{
-				id: "3E8E8E4CD2EEBE0D"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "5BBBE855F52ED029"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_brass_ingot"
-				}
-				{
-					id: "5324E6C8D0854FB6"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "4x Invar Ingot"
-			icon: "thermal:invar_ingot"
-			disable_toast: true
-			x: -6.0d
-			y: 7.0d
-			shape: "hexagon"
-			subtitle: "64 Silver"
-			id: "2D022872F99F9907"
-			tasks: [{
-				id: "3F49C93B2F9C8BC2"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "302C6F91CA94F1E1"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_invar_ingot"
-				}
-				{
-					id: "2CCCC558C8490FBA"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
 			title: "16x Coal"
 			icon: "minecraft:coal"
 			disable_toast: true
@@ -4097,7 +3965,7 @@
 				"The avid salesman can come here for purchasing Trading Machines from the get go. This should help you take off!"
 			]
 			dependencies: ["6AC1CED0D341150E"]
-			size: 1.5d
+			size: 2.0d
 			id: "4DFE4FD3B504AF4B"
 			tasks: [{
 				id: "3E2EAC7B2D274669"
