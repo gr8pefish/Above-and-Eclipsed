@@ -778,7 +778,8 @@ function tweaks(event) {
 		' P'
 	], { S: "xkdeco:steel_ingot", P: F("#rods/wooden") })
 
-
+	event.remove({ output: 'xkdeco:simple_wooden_table'})
+	event.remove({ output: 'xkdeco:simple_wooden_stool'})
 
 	event.remove({ output: TE("side_config_augment") })
 	event.shaped(TE("side_config_augment"), [
@@ -1861,7 +1862,8 @@ function andesiteMachine(event) {
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('create:andesite_tunnel', 4)
 	andesite_machine('kubejs:pipe_module_utility', 4)
-	andesite_machine('toms_storage:ts.storage_terminal', 1, 'toms_storage:ts.inventory_cable')
+	andesite_machine('toms_storage:ts.storage_terminal', 1, 'minecraft:crafting_table')
+	andesite_machine('toms_storage:ts.inventory_connector', 1, 'toms_storage:ts.inventory_cable')
 
 
 }
@@ -1918,7 +1920,6 @@ function copperMachine(event) {
 	copper_machine('thermal:dynamo_magmatic', 1, TE('rf_coil'))
 	copper_machine('thermal:device_water_gen', 1, MC('bucket'))
 	copper_machine('create:smart_fluid_pipe', 2)
-	copper_machine('toms_storage:ts.inventory_connector', 1, 'toms_storage:ts.inventory_cable')
 
 }
 

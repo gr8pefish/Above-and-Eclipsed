@@ -571,19 +571,11 @@
 				id: "1B5F1E9F5EE6EB2C"
 				type: "checkmark"
 			}]
-			rewards: [
-				{
-					id: "49A9C8798141C302"
-					type: "item"
-					item: "create:builders_tea"
-				}
-				{
-					id: "4925B384024C37F8"
-					type: "item"
-					item: "kubejs:andesite_machine"
-					count: 4
-				}
-			]
+			rewards: [{
+				id: "49A9C8798141C302"
+				type: "item"
+				item: "create:builders_tea"
+			}]
 		}
 		{
 			title: "Chapter 1 Complete!"
@@ -819,7 +811,7 @@
 		}
 		{
 			title: "Preparations"
-			icon: "minecraft:cobblestone_stairs"
+			icon: "create:goggles"
 			x: 4.0d
 			y: -1.0d
 			shape: "circle"
@@ -830,11 +822,20 @@
 			]
 			dependencies: ["5799D55BB26BA52C"]
 			id: "7D6BC99CCCB29924"
-			tasks: [{
-				id: "60553968E845A5DD"
-				type: "item"
-				item: "create:wrench"
-			}]
+			tasks: [
+				{
+					id: "60553968E845A5DD"
+					type: "item"
+					item: "create:wrench"
+					consume_items: false
+				}
+				{
+					id: "0C92A0876DA00D02"
+					type: "item"
+					item: "create:goggles"
+					consume_items: false
+				}
+			]
 			rewards: [
 				{
 					id: "24DFC6E24F62D97A"
@@ -843,34 +844,10 @@
 					count: 3
 				}
 				{
-					id: "2905958AB1A416C9"
+					id: "265713DA71D26BE9"
 					type: "item"
-					item: "create:encased_fan"
-				}
-				{
-					id: "66A8B146C9092114"
-					type: "item"
-					item: "create:mechanical_press"
-				}
-				{
-					id: "1A69FB5734A41A57"
-					type: "item"
-					item: "create:mechanical_saw"
-				}
-				{
-					id: "68FF5F6A8F158CB8"
-					type: "item"
-					item: "create:mechanical_mixer"
-				}
-				{
-					id: "3AA619FE84FFCEC3"
-					type: "item"
-					item: "create:millstone"
-				}
-				{
-					id: "4C819EF957C7DE25"
-					type: "item"
-					item: "tconstruct:seared_melter"
+					item: "kubejs:andesite_machine"
+					count: 6
 				}
 			]
 		}
@@ -887,6 +864,7 @@
 				id: "510C53F72AF0BAA5"
 				type: "item"
 				item: "torchmaster:dreadlamp"
+				consume_items: false
 			}]
 		}
 	]

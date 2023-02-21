@@ -91,7 +91,7 @@
 		{
 			title: "Engineer's Companion"
 			x: -6.0d
-			y: 3.0d
+			y: -1.0d
 			description: ["Especially while building new Contraptions, this gadget is incredibly handy. Instead of filling up your pockets with components, simply pick up the toolbox from the workshop and bring it with you."]
 			id: "26C39961F2E2ABF2"
 			tasks: [{
@@ -116,10 +116,10 @@
 		}
 		{
 			title: "Immersive Minimap"
-			x: -8.0d
-			y: -3.0d
+			x: -10.0d
+			y: -2.0d
 			description: [
-				"A cute alternative to the all-powerful map hud is the atlas."
+				"A cute alternative to the all-powerful map hud is the atlas. Craft one with a book and a compass."
 				""
 				"Aside from the fantastic feel and design; these atlases can be copied and handed to your friends. If one of the owners explores new Territory or places a marker, everyone else will see it too."
 			]
@@ -128,17 +128,13 @@
 				id: "1AF5CF1C0EA7DB2B"
 				type: "item"
 				item: "minecraft:book"
+				consume_items: false
 			}]
 			rewards: [
 				{
 					id: "2F5DF773BBBA2725"
 					type: "item"
 					item: "minecraft:map"
-				}
-				{
-					id: "4958596378CDE1F3"
-					type: "item"
-					item: "minecraft:item_frame"
 				}
 				{
 					id: "7A889A6DDD96B062"
@@ -150,7 +146,7 @@
 		{
 			title: "Big Barrels II"
 			x: -6.0d
-			y: 2.0d
+			y: -2.0d
 			description: ["If you are looking for extra large but specialised storage space in a block, check out Storage Drawers."]
 			id: "382EBC32AC27C839"
 			tasks: [{
@@ -549,7 +545,7 @@
 		}
 		{
 			x: -8.0d
-			y: -2.0d
+			y: -3.0d
 			description: ["Sometimes it is desirable to travel to a specific Biome. The Nature's Compass can at least point you in the right direction."]
 			id: "45E7810E21F6F9AE"
 			tasks: [{
@@ -572,7 +568,7 @@
 		{
 			title: "Big Barrels"
 			x: -6.0d
-			y: 1.0d
+			y: -3.0d
 			description: ["In case you need large universal storage space in a block, check out the upgrade options for wooden barrels."]
 			id: "50E2D6459F3D68C0"
 			tasks: [{
@@ -741,7 +737,7 @@
 			title: "The other Gamemode"
 			icon: "magicfeather:magicfeather"
 			x: -8.0d
-			y: 2.0d
+			y: 1.0d
 			description: ["Magic Feathers grant flight to the weilder, albeit only within the range of a Beacon Beam. Still, this should be of great help in setting up big factories!"]
 			id: "0F4B0608CBF966E6"
 			tasks: [
@@ -767,8 +763,8 @@
 		}
 		{
 			title: "Straw Man"
-			x: -6.0d
-			y: -3.0d
+			x: -10.0d
+			y: -1.0d
 			description: [
 				"Hit grass with a knife to get straw."
 				"In addition, killing mobs with this (e.g. cows) will guarantee at least one drop (e.g. leather)!"
@@ -785,6 +781,7 @@
 						value: "farmersdelight:straw_harvesters"
 					}
 				}
+				consume_items: false
 			}]
 			rewards: [{
 				id: "3F4217A820B92A14"
@@ -795,28 +792,20 @@
 		}
 		{
 			title: "String Me Up"
-			x: -6.0d
-			y: -2.0d
-			description: ["Convert wheat seeds to flax seeds and harvest the crops to reliably get string"]
+			x: -10.0d
+			y: 0.0d
+			description: [
+				"Convert wheat seeds to flax seeds and harvest the crops to reliably get string. Note: Right clicking flax with phyto grow when it's harvestable will crash your client"
+				"Or just raid a dungeon with a sword"
+			]
 			dependencies: ["5B4F7917B5D5FB1D"]
 			id: "25C323DACAE51852"
-			tasks: [
-				{
-					id: "7BEF49C5FF5854DB"
-					type: "item"
-					item: "minecraft:wheat_seeds"
-				}
-				{
-					id: "0E6B46CD6164F010"
-					type: "item"
-					item: "supplementaries:flax_seeds"
-				}
-				{
-					id: "48F7213AC8A97E63"
-					type: "item"
-					item: "supplementaries:flax"
-				}
-			]
+			tasks: [{
+				id: "731567AB06975570"
+				type: "item"
+				item: "minecraft:string"
+				consume_items: false
+			}]
 			rewards: [{
 				id: "6506143ADA506B92"
 				type: "item"
@@ -826,8 +815,8 @@
 		}
 		{
 			title: "Finally, Backpacks!"
-			x: -6.0d
-			y: -1.0d
+			x: -10.0d
+			y: 1.0d
 			description: ["Equip to your baubles backpack slot and open with a hotkey ('c' by default)"]
 			dependencies: ["25C323DACAE51852"]
 			dependency_requirement: "all_started"
@@ -843,6 +832,7 @@
 						value: "improvedbackpacks:backpack"
 					}
 				}
+				consume_items: false
 			}]
 			rewards: [{
 				id: "1874EC3D9B3BB5BD"
@@ -853,8 +843,8 @@
 		}
 		{
 			title: "Pockets"
-			x: -6.0d
-			y: 0.0d
+			x: -10.0d
+			y: 2.0d
 			description: ["Don't forget about these!"]
 			dependencies: ["6ECFB4AD20F3F195"]
 			id: "19AF54E8C64EB906"
@@ -862,6 +852,7 @@
 				id: "655876B5B10BCE94"
 				type: "item"
 				item: "improvedbackpacks:tiny_pocket"
+				consume_items: false
 			}]
 			rewards: [{
 				id: "6046E2EF89EFDC3B"
@@ -886,6 +877,7 @@
 						BlockStateTag: { }
 					}
 				}
+				consume_items: false
 			}]
 		}
 		{
@@ -903,16 +895,19 @@
 					id: "191EA2FE6794A234"
 					type: "item"
 					item: "framedblocks:framed_slope"
+					consume_items: false
 				}
 				{
 					id: "3914C9A4FE988194"
 					type: "item"
 					item: "framedcompactdrawers:framed_full_one"
+					consume_items: false
 				}
 				{
 					id: "6EC10EDBA74D6396"
 					type: "item"
 					item: "createdeco:andesite_catwalk"
+					consume_items: false
 				}
 				{
 					id: "3AFD4087F2627B28"
@@ -922,6 +917,7 @@
 			]
 		}
 		{
+			title: "Start Here"
 			x: -10.0d
 			y: -3.0d
 			description: ["Many performance mods have been included. Check your settings!"]
@@ -935,63 +931,87 @@
 		{
 			title: "Comforting"
 			x: -8.0d
-			y: -1.0d
+			y: -2.0d
 			id: "163984833931994E"
 			tasks: [{
 				id: "1EBE37FC9C6DCAF9"
 				type: "item"
 				item: "comforts:sleeping_bag_white"
+				consume_items: false
 			}]
 		}
 		{
 			title: "Bouncy!"
+			icon: {
+				id: "tconstruct:earth_slime_sling"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: -8.0d
-			y: 0.0d
+			y: -1.0d
+			description: ["Each slime sling has different properties!"]
 			id: "6F7CDD7F0052DFE3"
 			tasks: [{
-				id: "49CBEAA2BD9564F4"
+				id: "2D02017EE2867876"
 				type: "item"
-				title: "Any #tconstruct:slimeslings"
+				title: "Any #forge:slimeballs"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "tconstruct:slimeslings"
+						value: "forge:slimeballs"
 					}
 				}
+				count: 4L
+				consume_items: true
 			}]
-			rewards: [{
-				id: "3C15EC18DDD0F79A"
-				type: "item"
-				item: {
-					id: "tconstruct:slime_boots"
-					Count: 1b
-					tag: {
-						tic_multipliers: { }
-						tic_stats: {
-							"tconstruct:durability": 546.0f
-							"tconstruct:armor": 0.0f
-						}
-						tic_broken: 0b
-						HideFlags: 3
-						tic_modifiers: [
-							{
-								name: "tconstruct:bouncy"
-								level: 1s
+			rewards: [
+				{
+					id: "3C15EC18DDD0F79A"
+					type: "item"
+					item: {
+						id: "tconstruct:slime_boots"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 546.0f
+								"tconstruct:armor": 0.0f
 							}
-							{
-								name: "tconstruct:leaping"
-								level: 1s
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:bouncy"
+									level: 1s
+								}
+								{
+									name: "tconstruct:leaping"
+									level: 1s
+								}
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 5
 							}
-						]
-						Damage: 0
-						tic_persistent_data: {
-							abilities: 1
-							upgrades: 5
 						}
 					}
 				}
-			}]
+				{
+					id: "6E0BCBF8E2DF2096"
+					type: "item"
+					item: {
+						id: "tconstruct:earth_slime_sling"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Tinkering Away"
@@ -1003,6 +1023,7 @@
 				id: "55360428DC8D5B08"
 				type: "item"
 				item: "tconstruct:smeltery_controller"
+				consume_items: false
 			}]
 			rewards: [{
 				id: "6FD1610B5ECD8469"
@@ -1012,8 +1033,8 @@
 		}
 		{
 			x: -8.0d
-			y: 1.0d
-			description: ["A nether essential"]
+			y: 0.0d
+			description: ["A nether essential. Check your keybinds!"]
 			id: "7E6BD0080D68B98C"
 			tasks: [{
 				id: "4A8C81F8506160D6"
@@ -1061,6 +1082,7 @@
 						}
 					}
 				}
+				consume_items: false
 			}]
 		}
 		{
@@ -1076,18 +1098,28 @@
 					Count: 1b
 					tag: { }
 				}
+				consume_items: false
 			}]
 		}
 		{
 			x: -4.0d
 			y: 2.0d
-			description: ["Blocks mob spawns in a 64 block radius"]
+			description: ["Mega torch blocks mob spawns in a 64 block radius"]
 			id: "71D32FE9414739F2"
-			tasks: [{
-				id: "67191D3D4F000969"
-				type: "item"
-				item: "torchmaster:megatorch"
-			}]
+			tasks: [
+				{
+					id: "67191D3D4F000969"
+					type: "item"
+					item: "torchmaster:megatorch"
+					consume_items: false
+				}
+				{
+					id: "63E28D51A0899C02"
+					type: "item"
+					item: "torchmaster:feral_flare_lantern"
+					consume_items: false
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -1104,6 +1136,7 @@
 						Damage: 0
 					}
 				}
+				consume_items: false
 			}]
 		}
 		{
@@ -1117,11 +1150,13 @@
 					id: "792FCB71A94FBF6C"
 					type: "item"
 					item: "computercraft:computer_normal"
+					consume_items: false
 				}
 				{
 					id: "7E1A9C7DFF683F04"
 					type: "item"
 					item: "computercraft:turtle_normal"
+					consume_items: false
 				}
 			]
 		}
